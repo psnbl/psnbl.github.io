@@ -1,10 +1,212 @@
-<html>
-	<head>
-		<title>psnbl</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	</head>
-	<body>
-		<h1 style="margin: 20px; padding: 5px; font-family: Helvetica;">Personal website under construction...</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://psnbl.github.io/" />
+    <title>PSNBL</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;600&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont,
+          sans-serif;
+        background-color: #fff;
+        color: #0f0f0f;
+        line-height: 1.5;
+        overflow-x: hidden;
+        overflow: hidden;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*padding: 20px 0;*/
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      .nav-links a {
+        color: #a1a1a6;
+        text-decoration: none;
+        margin-left: 30px;
+        transition: color 0.3s ease;
+      }
+
+      .nav-links a:hover {
+        color: #fff;
+      }
+
+      .hero {
+        padding: 100px 0;
+      }
+
+      h1 {
+        font-size: 56px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+
+      .subhead {
+        font-size: 28px;
+        font-weight: 400;
+        color: #a1a1a6;
+        margin-bottom: 40px;
+      }
+
+      .cta {
+        display: inline-block;
+        background-color: #0071e3;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 980px;
+        text-decoration: none;
+        font-size: 18px;
+        transition: background-color 0.3s ease;
+      }
+
+      .cta:hover {
+        background-color: #0077ed;
+      }
+
+      .features {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+      }
+
+      .feature {
+        max-width: 300px;
+      }
+
+      .feature h2 {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      .feature p {
+        color: #a1a1a6;
+        font-size: 17px;
+      }
+
+      .countdown {
+        font-size: 36px;
+        font-weight: 300;
+        margin-top: 80px;
+      }
+
+      footer {
+        margin-top: auto;
+        color: #a1a1a6;
+        font-size: 12px;
+        text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .features {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .feature {
+          margin-bottom: 40px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav class="nav">
+        <div class="logo">PSN</div>
+        <!--<div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </div>-->
+      </nav>
+
+      <section class="hero">
+        <h1>Coming Soon</h1>
+        <p class="subhead">A new way to showcase my work and ideas.</p>
+        <!--<a href="#notify" class="cta">Get notified</a>-->
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <h2>Sleek Design</h2>
+          <p>
+            Experience a minimalist and intuitive interface that puts the focus
+            on what matters most - the content.
+          </p>
+        </div>
+        <div class="feature">
+          <h2>Innovative Showcase</h2>
+          <p>
+            Discover new ways to interact with my projects and ideas through
+            cutting-edge web technologies.
+          </p>
+        </div>
+        <div class="feature">
+          <h2>Seamless Experience</h2>
+          <p>
+            Enjoy a smooth and responsive browsing experience across all your
+            devices.
+          </p>
+        </div>
+      </section>
+
+      <!--<div class="countdown">
+        Launching in: 14 days
+      </div>-->
+      <div class="countdown">
+        Launching in: N/A
+      </div>
+
+      <footer>&copy; 2024 PSNBL. All rights reserved.</footer>
+    </div>
+
+    <!--<script>
+    // Add a simple countdown functionality
+    const countdownElement = document.querySelector('.countdown');
+    let daysLeft = 14;
+    
+    function updateCountdown() {
+      countdownElement.textContent = `Launching in: ${daysLeft} days`;
+      daysLeft--;
+      
+      if (daysLeft < 0) {
+        countdownElement.textContent = "Launched!";
+      } else {
+        setTimeout(updateCountdown, 24 * 60 * 60 * 1000); // Update every 24 hours
+      }
+    }
+    
+    updateCountdown();
+  </script>-->
+  </body>
 </html>
